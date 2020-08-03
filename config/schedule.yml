@@ -1,0 +1,7 @@
+client_job:
+  cron: "*/5 * * * *"
+  class: "ClientWorker"
+
+client_sales_job:
+  cron: "*/5 * * * *"
+  class: "SalesWorker"

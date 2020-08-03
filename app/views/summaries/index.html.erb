@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Summaries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @summaries.each do |summary| %>
+      <tr>
+        <% if summary.max_revenue.present? %>
+          <td>
+            Max revenue - <%= summary.max_revenue %>
+          </td>
+        <% end %>
+        <% if summary.min_revenue.present? %>
+          <td>
+            Min revenue - <%= summary.min_revenue %>
+          </td>
+        <% end %>
+        <% if summary.current_min_revenue.present? %>
+          <td>
+            Current min revenue - <%= summary.current_min_revenue %>
+          </td>
+        <% end %>
+        <% if summary.sum_revenue.present? %>
+          <td>
+            Sum revenue - <%= summary.sum_revenue %>
+          </td>
+        <% end %>
+        <td>
+          <%= summary.revenue %>
+        </td>
+        <td>
+          <%= summary.first_name %>
+        </td>
+        <td>
+          <%= summary.last_name %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
