@@ -9,6 +9,5 @@ class SalesWorker
       ClientSale.upsert({ client_id: d['client_id'], revenue: d['revenue'], created_at: Time.now, updated_at: Time.now }, unique_by: :client_id)
     end
     TotalRevenueWorker.perform_async(data_hash['data'])
-    p 'Buy!'
   end
 end
