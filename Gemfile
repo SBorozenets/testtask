@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'redis', '~> 4.1', '>= 4.1.3'                       # A Ruby client that tries to match Redis' API one-to-one
 gem 'redis-activesupport', '~> 5.2'                     # Gem to support rack_attack and redis interaction
 gem 'redis-rails', '5.0.2'                              # Gem for redis cache
-gem 'sidekiq', '~> 6.0', '>= 6.0.5'                     # Background processing library
+gem 'sidekiq', '~> 6.4'                               # Background processing library
 gem 'sidekiq-failures', '~> 1.0'                        # Track sidekiq failures in web ui
 gem 'sidekiq-cron'
 
